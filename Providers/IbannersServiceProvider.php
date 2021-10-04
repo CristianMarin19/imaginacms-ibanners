@@ -51,7 +51,7 @@ class IbannersServiceProvider extends ServiceProvider
   public function boot()
   {
     $this->publishConfig('ibanners', 'config');
-    $this->publishConfig('ibanners', 'permissions');
+    $this->mergeConfigFrom($this->getModuleConfigFilePath('ibanners', 'permissions'), "asgard.ibanners.permissions");
 
     $this->registerPositions();
     $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
