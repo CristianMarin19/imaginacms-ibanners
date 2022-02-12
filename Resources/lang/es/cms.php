@@ -1,12 +1,17 @@
 <?php
+
 return [
-  "newBanner" => 'Nuevo Banner',
-  "updateSlider" => 'Actualizar Banner',
-  "createSlider" => 'Crear Banner',
-  "newBannerItem" => 'Nuevo Elemento',
-  "updateSlide" => 'Actualizar Elemento',
+  "sidebar" => [
+    "adminBanner" => "Banners",
+    "adminBannerEdit" => "Editar Banner"
+  ],
+  "newBanner" => "Nuevo Banner",
+  "updateSlider" => "Actualizar Banner",
+  "createSlider" => "Crear Banner",
+  "newBannerItem" => "Nuevo Elemento",
+  "updateSlide" => "Actualizar Elemento",
   "label" => [
-    "codeAds"  => 'Codigo ADS',
-    "showAsPopup" => 'Mostrar como ventana emergente'
+    "codeAds" => "Codigo ADS",
+    "showAsPopup" => "Mostrar como ventana emergente"
   ]
 ];
