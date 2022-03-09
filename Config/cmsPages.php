@@ -30,7 +30,7 @@ return [
       "subHeader" => [
         "refresh" => true,
         "breadcrumb" => [
-          "qbanner.index"
+          "ibanner_cms_admin_index"
         ]
       ]
     ],
