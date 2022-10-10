@@ -13,5 +13,7 @@ class IbannersDatabaseSeeder extends Seeder
     public function run()
     {
         Model::unguard();
+        
+        $this->call(IbannersModuleTableSeeder::class);
     }
 }
