@@ -1,7 +1,7 @@
 <?php
 
 return [
-  'admin' => [
+    'admin' => [
     "index" => [
       "permission" => "ibanners.positions.manage",
       "activated" => true,
@@ -16,7 +16,7 @@ return [
       "subHeader" => [
         "refresh" => true
       ]
-    ],
+            ],
     "showBanner" => [
       "permission" => "ibanners.banners.index",
       "activated" => true,
@@ -33,30 +33,30 @@ return [
           "ibanner_cms_admin_index"
         ]
       ]
+        ],
+        'createBanner' => [
+            'permission' => 'ibanners.banners.create',
+            'activated' => true,
+            'path' => '/banners/create/:positionId',
+            'name' => 'qbanner.admin.banner.create',
+            'page' => 'qbanner/_pages/admin/banner/create.vue',
+            'layout' => 'qsite/_layouts/master.vue',
+            'title' => 'ibanners.cms.sidebar.adminIndex',
+            'icon' => 'fas fa-images',
+            'authenticated' => true,
+        ],
+        'updateBanner' => [
+            'permission' => 'ibanners.banners.update',
+            'activated' => true,
+            'path' => '/banners/update/:positionId/:id',
+            'name' => 'qbanner.admin.banner.update',
+            'page' => 'qbanner/_pages/admin/banner/show.vue',
+            'layout' => 'qsite/_layouts/master.vue',
+            'title' => 'ibanners.cms.sidebar.adminIndex',
+            'icon' => 'fas fa-images',
+            'authenticated' => true,
+        ],
     ],
-    "createBanner" => [
-      "permission" => "ibanners.banners.create",
-      "activated" => true,
-      "path" => "/banners/create/:positionId",
-      "name" => "qbanner.admin.banner.create",
-      "page" => "qbanner/_pages/admin/banner/create.vue",
-      "layout" => "qsite/_layouts/master.vue",
-      "title" => "ibanners.cms.sidebar.adminIndex",
-      "icon" => "fas fa-images",
-      "authenticated" => true
-    ],
-    "updateBanner" => [
-      "permission" => "ibanners.banners.update",
-      "activated" => true,
-      "path" => "/banners/update/:positionId/:id",
-      "name" => "qbanner.admin.banner.update",
-      "page" => "qbanner/_pages/admin/banner/show.vue",
-      "layout" => "qsite/_layouts/master.vue",
-      "title" => "ibanners.cms.sidebar.adminIndex",
-      "icon" => "fas fa-images",
-      "authenticated" => true
-    ]
-  ],
-  'panel' => [],
-  'main' => [],
+    'panel' => [],
+    'main' => [],
 ];
